@@ -6,4 +6,5 @@ Gems can be used to convert to other currency inside the minecraft server, such 
 The bot also includes a custom algorithm that manages messages sent in different channels and rewards a custom currency (gems) based off of activity. 
 Almost all aspects of Warden use SQL lite and I've tried to optimize the bot as much as possible.
 The algorithm however is cache based and only edits the database at the very end.
+* I do realize that there are global variables and I am going refactors lots of things
 - Some code has been deleted for privacy and to keep some of my secrets ;)
