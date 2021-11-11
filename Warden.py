@@ -20,11 +20,11 @@ from discord.ext.commands import has_permissions, MissingPermissions
 from discord.ext.commands import bot
 from discord.webhook import AsyncWebhookAdapter
 
-token = 'Njc5ODEyNzg2MjAwNTEwNTgz.Xk2y_g.LjHx-ULuYetXc0hObBe7Pp1Ca64'
+token = ######
 
 client = commands.Bot('>')
 
-conn = sqlite3.connect('warden.db')
+conn = sqlite3.connect('######')
 c = conn.cursor()
 
 #.execute(""" CREATE TABLE IF NOT EXISTS wardenMessages (
