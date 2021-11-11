@@ -219,7 +219,7 @@ def getInstanceInTuple(a:str, index):
 global msgStringCache
 msgStringCache = ["warden:1:1:1"] # name:time of msg:id:amount
 global chatChannels
-chatChannels = [488567034712686602,450120546282242048]#,680997606943621130,602708225263140864] #commands,general,no context quotes,suggestions  
+chatChannels = [##########] 
 
 
 @client.command()
@@ -374,7 +374,7 @@ betCheck = []
 @has_permissions(manage_messages=True)
 async def roulette(ctx): #Allow winners and losers to be displayed better
     await client.wait_until_ready()
-    channel = client.get_channel(488567034712686602)
+    channel = client.get_channel(#########)
     embed=discord.Embed(title="𝐓𝐢𝐦𝐞 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐫𝐨𝐮𝐥𝐞𝐭𝐭𝐞, 𝐡𝐞𝐫𝐞 𝐚𝐫𝐞 𝐭𝐡𝐞 𝐧𝐮𝐦𝐛𝐞𝐫𝐬!", description="red = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36] \n black = [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35] \n zero = [0]", color=0xff0033)
     embed.set_thumbnail(url="https://www.culturalweekly.com/wp-content/uploads/2020/05/Roulette-wheel-600x350.png")
     embed.set_author(name="Warden Roulette")
@@ -512,7 +512,7 @@ async def guessWordGame():
     global guessGame
     guessGame = True
     await client.wait_until_ready()
-    channel = client.get_channel(488567034712686602)
+    channel = client.get_channel(###########)
     await channel.send("Time to guess that word! In 3...")
     await asyncio.sleep(1)
     await channel.send("2...")
@@ -546,7 +546,7 @@ word = ""
 async def on_message(message):
     global word
     global guessGame
-    if (message.channel.id == 488567034712686602 and message.content.lower() == word.lower() and guessGame == True): 
+    if (message.channel.id == ####### and message.content.lower() == word.lower() and guessGame == True): 
         guessWordGame.cancel()
         person = message.author.mention
         id = message.author.id
@@ -587,7 +587,7 @@ async def shop(ctx):
 @client.command()
 @has_permissions(manage_messages=True)
 async def buy(ctx, *, state):
-    wardenChannel = client.get_channel(849510501209473034)
+    wardenChannel = client.get_channel(#######)
     id = ctx.author.id
     c.execute('SELECT * FROM warden WHERE id IN (SELECT id FROM warden WHERE id = ?)', (id,))
     testId = c.fetchall()
