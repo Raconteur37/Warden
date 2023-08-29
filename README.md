@@ -7,4 +7,4 @@ The bot also includes a custom algorithm that manages messages sent in different
 Almost all aspects of Warden use SQL lite and I've tried to optimize the bot as much as possible.
 The algorithm however is cache based and only edits the database at the very end.
 * I do realize that there are global variables and I am going refactors lots of things
-- Some code has been deleted for privacy and to keep some of my secrets ;)
+- READ: THIS BOT IS THE OLD IMPLEMENTATION AND NOT USED ANYMORE
